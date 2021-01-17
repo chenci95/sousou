@@ -64,7 +64,7 @@ function getHotkeyword(value) {
 			hotList = res.s.length;
 			if (hotList) {
 				$("#box").css("display", "block");
-				for (var i = 0; i < hotList; i++) {
+				for (var i = 0; i < 8; i++) {
 					$("#box ul").append("<li><span>" + (i + 1) + "</span>" + res.s[i] + "</li>");
 					$("#box ul li").eq(i).click(function() {
 						$('#txt').val(this.childNodes[1].nodeValue);
