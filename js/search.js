@@ -184,10 +184,6 @@ $(function() {
 			icon: 'icon-biying1',
 			url: 'https://cn.bing.com/search?q='
 		}, {
-			name: 'GitHub',
-			icon: 'icon-gitHub',
-			url: 'https://github.com/search?q='
-		}, {
 			name: '360',
 			icon: 'icon-360sousuo',
 			url: 'https://www.so.com/s?q='
@@ -199,79 +195,7 @@ $(function() {
 			name: '多吉',
 			icon: 'icon-gou',
 			url: 'https://www.dogedoge.com/results?q='
-		}, {
-			name: '淘宝',
-			icon: 'icon-TB',
-			url: 'https://s.taobao.com/search?q='
-		}, {
-			name: '京东',
-			icon: 'icon-jingdong1',
-			url: 'http://search.jd.com/Search?keyword='
-		}, {
-			name: '天猫',
-			icon: 'icon-tianmao1',
-			url: 'https://list.tmall.com/search_product.htm?q='
-		}, {
-			name: '知乎',
-			icon: 'icon-zhihu',
-			url: 'https://www.zhihu.com/search?type=content&q='
-		}, {
-			name: '微博',
-			icon: 'icon-weibo',
-			url: 'https://s.weibo.com/weibo/'
-		}, {
-			name: 'B站',
-			icon: 'icon-bzhanicon',
-			url: 'http://search.bilibili.com/all?keyword='
-		}, {
-			name: '豆瓣',
-			icon: 'icon-douban',
-			url: 'https://www.douban.com/search?source=suggest&q='
-		}, {
-			name: '优酷',
-			icon: 'icon-youku',
-			url: 'https://so.youku.com/search_video/q_'
-		}, {
-            name: "精易",
-            icon: "icon-bangong",
-            url: "http://api.1da.top/go/jingyi.php?q="
-        }, {
-			name: 'CSDN',
-			icon: 'icon-zaixianbianji',
-			url: 'https://so.csdn.net/so/search/s.do?q='
-		}, {
-            name: '微信',
-            icon: 'icon-weixin',
-            url: 'https://weixin.sogou.com/weixin?type=2&query='
-        }, {
-            name: '药品',
-            icon: 'icon--xiongmao',
-            url: 'https://www.315jiage.cn/search.aspx?where=title&keyword='
-        }, {
-            name: '图标',
-            icon: 'icon--nainiu',
-            url: 'http://www.easyicon.net/iconsearch/'
-        }, {
-            name: 'seo综合',
-            icon: 'icon-_qianduankaifa',
-            url: 'https://www.aizhan.com/seo/'
-        }, {
-            name: 'Ping检测',
-            icon: 'icon-LeetCode',
-            url: 'http://ping.chinaz.com/'
-        }, {
-            name: '斗图',
-            icon: 'icon-bilibili',
-            url: 'https://www.doutula.com/search?keyword='
-        }, {
-            name: 'gif',
-            icon: 'icon-youtube',
-            url: 'https://www.soogif.com/search/'
-        },{
-            name: '百科',
-            icon: 'icon-baidu',
-            url: 'https://baike.baidu.com/search?word='
-        }]
+		}]
 	}
 	for (var i = 0; i < search.data.length; i++) {
 		var addList = '<li><svg class="icon" aria-hidden = "true" ><use xlink:href="#' + search.data[i].icon +
