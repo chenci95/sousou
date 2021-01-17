@@ -1,0 +1,23 @@
+ $.getJSON("js/data.json", function (c) {
+        $.each(c, function (i, b) {
+            let tag = '<li class="title"><svg class="icon" aria-hidden="true">';
+            let icon = '<use xlink:href="#' + b.icon + '"></use>';
+            let addList = tag + icon + '</svg> ' + b.title + '</li>';
+            $('.list ul').append(addList);
+            $.each(b.node, function (i, a) {
+                let url = '<li><a rel="nofollow" href="' + a.url + '" target="_blank">';
+                let icon = '<svg class="icon" aria-hidden="true"><use xlink:href="#' + a.icon + '"></use>';
+                let href = '<use xlink:href="#' + a.icon + '"></use>';
+                let addList = url + icon + '</svg>' + a.text + '</a></li>';
+                $('.list ul').append(addList)
+            })
+        });
+    });
+    var d = $('.foot').html();
+    var f = 'www.hacksafe.net';
+    var g = '黑客安全网';
+    if (!(d.indexOf(f) >= 0 && d.indexOf(g) >= 0)) {
+        $("body").empty();
+        $("body").append('<h1>仅可添加自己的版权，请勿删除原有版权，谢谢。</br>若要使用，请恢复版权。</h1>')
+    };
+    console.log('\n %c 黑客安全网  %c https://www.hacksafe.net \n', 'color: #fadfa3; background: #030307; padding:5px 0;', 'background: #fadfa3; padding:5px 0;')
